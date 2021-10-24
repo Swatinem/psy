@@ -15,7 +15,7 @@ pub fn bench_lookup(c: &mut Criterion) {
 
     let mut rng = SmallRng::seed_from_u64(0);
 
-    for size in [8 /*, 50, 64, 100, 128, 1_024*/] {
+    for size in [16 /*, 50, 64, 100, 128, 1_024*/] {
         let mut prefixes = Vec::with_capacity(size);
         let mut sum = 0;
         let sums = (0..size)
